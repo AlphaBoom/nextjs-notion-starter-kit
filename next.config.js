@@ -16,6 +16,8 @@ module.exports = withBundleAnalyzer({
       'transitivebullsh.it'
     ],
     formats: ['image/avif', 'image/webp'],
+    loader: 'imgix',
+    path: 'https://example.com/myaccount/',
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
   }
