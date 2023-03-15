@@ -7,6 +7,7 @@ export const RedirectDynamicSite: React.FC = () => {
         <div className={styles.redirectDiv}>
             <a href="https://notion.alphaboom.cn"
                 target="_blank"
+                rel='noopener noreferrer'
                 title="这是部署于Github的静态备份站点，点击访问真实站点"
                 className={styles.redirectA}
             >
