@@ -189,6 +189,79 @@
   animation: octocat-wave 560ms ease-in-out;
 }
 
+.redirectDiv {
+  color: #6f6f6f;
+  --customiser-transform: 0px;
+  font-family: lato,tahoma,sans-serif;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 1001;
+  transform: translateX(calc(var(--customiser-transform)));
+  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+}
+
+@media (max-width: 1530px) {
+  .redirectDiv{
+    display: none;
+  }
+}
+
+.redirectA{
+  --customiser-transform: 0px;
+  box-sizing: inherit;
+  margin: 0;
+  position: absolute;
+  display: block;
+  z-index: 1005;
+  cursor: pointer;
+  background-color: #5c5c5c;
+  color: #f0f0f0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: montserrat,tahoma,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: -2px 3px 1px rgba(0,0,0,.23);
+  opacity: 1;
+  text-transform: uppercase;
+  transform: translateZ(0) rotate(45deg);
+  transform-origin: 0 0;
+  height: 44px;
+  line-height: 47px;
+  transition: background-color .2s ease-out 0s,transform .7s cubic-bezier(.7,0,.25,1),opacity .2s ease-out,-webkit-transform .7s cubic-bezier(.7,0,.25,1);
+  width: 200%;
+  left: -10%;
+  top: -32%;
+}
+.redirectA:hover{
+  background-color: #4b4b4b;
+  color: #fff;
+}
+
+.redirectSpan{
+  --customiser-transform: 0px;
+  cursor: pointer;
+  color: #f0f0f0;
+  text-align: center;
+  font-family: montserrat,tahoma,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 47px;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+}
+
 @keyframes octocat-wave {
   0%,
   100% {
